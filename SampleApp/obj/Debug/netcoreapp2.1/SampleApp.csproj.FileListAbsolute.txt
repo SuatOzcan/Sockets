@@ -1,0 +1,14 @@
+D:\C#Projeleri\Sockets\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.deps.json
+D:\C#Projeleri\Sockets\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.runtimeconfig.json
+D:\C#Projeleri\Sockets\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.runtimeconfig.dev.json
+D:\C#Projeleri\Sockets\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.dll
+D:\C#Projeleri\Sockets\SampleApp\bin\Debug\netcoreapp2.1\SampleApp.pdb
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.csprojAssemblyReference.cache
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.csproj.CoreCompileInputs.cache
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.RazorAssemblyInfo.cache
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.RazorAssemblyInfo.cs
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.AssemblyInfoInputs.cache
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.AssemblyInfo.cs
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.RazorTargetAssemblyInfo.cache
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.dll
+D:\C#Projeleri\Sockets\SampleApp\obj\Debug\netcoreapp2.1\SampleApp.pdb
