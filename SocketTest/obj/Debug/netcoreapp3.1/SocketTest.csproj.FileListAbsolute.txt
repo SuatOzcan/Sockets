@@ -1,0 +1,13 @@
+D:\C#Projeleri\Sockets\SocketTest\bin\Debug\netcoreapp3.1\SocketTest.exe
+D:\C#Projeleri\Sockets\SocketTest\bin\Debug\netcoreapp3.1\SocketTest.deps.json
+D:\C#Projeleri\Sockets\SocketTest\bin\Debug\netcoreapp3.1\SocketTest.runtimeconfig.json
+D:\C#Projeleri\Sockets\SocketTest\bin\Debug\netcoreapp3.1\SocketTest.runtimeconfig.dev.json
+D:\C#Projeleri\Sockets\SocketTest\bin\Debug\netcoreapp3.1\SocketTest.dll
+D:\C#Projeleri\Sockets\SocketTest\bin\Debug\netcoreapp3.1\SocketTest.pdb
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.csprojAssemblyReference.cache
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.AssemblyInfoInputs.cache
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.AssemblyInfo.cs
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.csproj.CoreCompileInputs.cache
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.dll
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.pdb
+D:\C#Projeleri\Sockets\SocketTest\obj\Debug\netcoreapp3.1\SocketTest.genruntimeconfig.cache

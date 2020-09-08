@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace SocketTest
@@ -22,11 +23,25 @@ namespace SocketTest
             {
                 socket = new Socket(address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
                 endPoint = new IPEndPoint(address, port);
+                await socket.ConnectAsync(endPoint);
                 if (socket.Connected)
                 {
-                    break;
+                    var message = GetRequestMessage(server, port, path);
+                    var messageBytes = Encoding.ASCII.GetBytes(message);
+                    var segment = new ArraySegment<byte>(messageBytes);
+                    await socket.SendAsync(segment, SocketFlags.None);
                 }
             }
+            
+        }
+
+        private static string GetRequestMessage(string server, int port, string path)
+        {
+            var message = $"GET {path} HTTP/1.1\r\n";
+            message += $"Host: {server}:{port}\r\n";
+            message += "cache-control: no-cache\r\n";
+            message += "\r\n";
+            return message;
         }
     }
 }
