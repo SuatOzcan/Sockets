@@ -24,8 +24,8 @@ namespace SocketTest
             foreach (var address in host.AddressList)
             {
                 socket = new Socket(address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-                endPoint = new IPEndPoint(address, port).;
-                await socket.ConnectAsync(endPoint).Wait(;
+                endPoint = new IPEndPoint(address, port);
+                await socket.ConnectAsync(endPoint);
                 if (socket.Connected)
                 {
                     break;
