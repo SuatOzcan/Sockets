@@ -36,7 +36,7 @@ namespace SocketTest
             var receiveSeg = new ArraySegment<byte>(new byte[512], 0, 512);
             await socket.ReceiveAsync(receiveSeg, SocketFlags.None);
             string receivedMessage = Encoding.ASCII.GetString(receiveSeg);
-            foreach (var line in receivedMessage.Split())
+            foreach (var line in receivedMessage.Split("\r\n"))
             {
                 Console.WriteLine(line);
             }
