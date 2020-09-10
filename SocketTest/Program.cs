@@ -12,8 +12,8 @@ namespace SocketTest
         {
             string server = "localhost";
             int port = 5000;
-           // string path = "/api/values"; 77this is for dotnet 2.2 framework
-           string path = "/weatherforecast"; //this one is for dotnet 3.1 framework
+           // string path = "/api/values"; this is for dotnet 2.2 framework, sampleApp
+           string path = "/weatherforecast"; //this one is for dotnet 3.1 framework, deneme 
 
             Socket socket = null;
             IPEndPoint endPoint = null;
