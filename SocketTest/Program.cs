@@ -12,8 +12,8 @@ namespace SocketTest
         {
             string server = "localhost";
             int port = 5000;
-            string path = "api/values";
-            //string path = "/weatherforecast";
+           // string path = "/api/values"; 77this is for dotnet 2.2 framework
+           string path = "/weatherforecast"; //this one is for dotnet 3.1 framework
 
             Socket socket = null;
             IPEndPoint endPoint = null;
@@ -26,31 +26,30 @@ namespace SocketTest
                 await socket.ConnectAsync(endPoint);
                 if (socket.Connected)
                 {
-                    var message = GetRequestMessage(server, port, path);
-                    var messageBytes = Encoding.ASCII.GetBytes(message);
-                    var segment = new ArraySegment<byte>(messageBytes);
-                    await socket.SendAsync(segment, SocketFlags.None);
-                } 
+                    break;
+                }
             }
-
-            var receiveSeg = new ArraySegment<byte>(new byte[512], 0, 512);
+            var message = GetRequestMessage(server, port, path);
+            var messageBytes = Encoding.ASCII.GetBytes(message);
+            var segment = new ArraySegment<byte>(messageBytes);
+            await socket.SendAsync(segment, SocketFlags.None);
+            var receiveSeg = new ArraySegment<byte>(new byte[512],0,512);
             await socket.ReceiveAsync(receiveSeg, SocketFlags.None);
-            string receivedMessage = Encoding.ASCII.GetString(receiveSeg);
+            string receivedMessage = Encoding.UTF8.GetString(receiveSeg);
             foreach (var line in receivedMessage.Split("\r\n"))
             {
                 Console.WriteLine(line);
             }
-            
             socket.Disconnect(false);
             socket.Dispose();
         }
 
         private static string GetRequestMessage(string server, int port, string path)
         {
-            var message = $"GET {path} HTTP/1.1";
-            message += $"Host: {server}:{port}";
-            message += "cache-control: no-cache";
-            message += "";
+            var message = $"GET {path} HTTP/1.1\r\n";
+            message += $"Host: {server}:{port}\r\n";
+            message += "cache-control: no-cache\r\n";
+            message += "\r\n";
             return message;
         }
     }
