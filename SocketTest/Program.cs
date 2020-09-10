@@ -12,8 +12,10 @@ namespace SocketTest
         {
             string server = "localhost";
             int port = 5000;
-           // string path = "/api/values"; this is for dotnet 2.2 framework, sampleApp
-           string path = "/weatherforecast"; //this one is for dotnet 3.1 framework, deneme 
+           // string path = "/api/values"; this is for dotnet 2.2 framework, sampleApp server
+           string path = "/weatherforecast"; //this one is for dotnet 3.1 framework, deneme server
+
+            //We may alter our Main() Task to the static void Main() method and remove awaits and add Wait() function in our asynchronous methods.
 
             Socket socket = null;
             IPEndPoint endPoint = null;
@@ -22,8 +24,8 @@ namespace SocketTest
             foreach (var address in host.AddressList)
             {
                 socket = new Socket(address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-                endPoint = new IPEndPoint(address, port);
-                await socket.ConnectAsync(endPoint);
+                endPoint = new IPEndPoint(address, port).;
+                await socket.ConnectAsync(endPoint).Wait(;
                 if (socket.Connected)
                 {
                     break;
